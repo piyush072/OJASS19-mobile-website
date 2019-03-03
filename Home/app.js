@@ -12,6 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
+  
 {
   "particles": {
     "number": {
@@ -22,13 +23,13 @@ particlesJS('particles-js',
       }
     },
     "color": {
-      "value": "#66ff33"
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#66ff33"
+        "color": "#ffffff"
       },
       "polygon": {
         "nb_sides": 5
@@ -61,23 +62,23 @@ particlesJS('particles-js',
     },
     "line_linked": {
       "enable": true,
-      "distance": 272.4075216523917,
-      "color": "#66ff33",
-      "opacity": 0.25253920276530434,
-      "width": 0.9470220103698914
+      "distance": 150,
+      "color": "#8008db",
+      "opacity": 0.7,
+      "width": 3.6831822694808296
     },
     "move": {
       "enable": true,
-      "speed": 8.011985930952699,
-      "direction": "top",
-      "random": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 2243.3560606667556,
-        "rotateY": 8652.944805428915
+        "rotateX": 600,
+        "rotateY": 1200
       }
     }
   },
@@ -86,7 +87,7 @@ particlesJS('particles-js',
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
@@ -96,7 +97,7 @@ particlesJS('particles-js',
     },
     "modes": {
       "grab": {
-        "distance": 182.59281801582486,
+        "distance": 400,
         "line_linked": {
           "opacity": 1
         }
@@ -122,4 +123,5 @@ particlesJS('particles-js',
   },
   "retina_detect": true
 }
+
 );
