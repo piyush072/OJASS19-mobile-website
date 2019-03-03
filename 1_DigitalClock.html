@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Digital Clock</title>
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<style type="text/css">
+		.clock{
+			position: relative;
+			color: #fff;
+			font-size: 70px;
+			background: rgba(14,52,134,0.5);
+		/*	border: 1px solid #ccc;*/
+		}
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+			<div id="MyClockDisplay" style="font-family: 'Permanent Marker', cursive;" class="clock text-center">
+			</div>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+		// Set the date we're counting down to
+		var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		  // Get todays date and time
+		  var now = new Date().getTime();
+
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			if(days<9){
+				days = ("0"+days)
+			}
+			if(hours<9){
+				hours = ("0"+hours)
+			}
+			if(minutes<9){
+				minutes = ("0"+minutes)
+			}
+			if(seconds<9){
+				seconds = ("0"+seconds)
+			}
+
+		  // Display the result in the element with id="demo"
+		  document.getElementById("MyClockDisplay").innerHTML = days + "D " + hours + "H "
+		  + minutes + "M " + seconds + "S ";
+
+		  // If the count down is finished, write some text
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("MyClockDisplay").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+
+		</script>
+	</body>
+</html>
