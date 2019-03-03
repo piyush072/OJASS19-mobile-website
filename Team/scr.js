@@ -12,6 +12,26 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
-} 
+}
 
+/*$(document).ready(function() {
+  		 $("#carouselExampleIndicators").swiperight(function() {
+    		  $(this).carousel('prev');
+	    		});
+		   $("#carouselExampleIndicators").swipeleft(function() {
+		      $(this).carousel('next');
+	   });
+	});
+*/
 
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
