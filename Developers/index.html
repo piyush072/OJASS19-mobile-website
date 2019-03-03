@@ -65,9 +65,9 @@ p{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -130,7 +130,7 @@ p{
 	</div>
 
 	<div class="mySlides fade">
-	<img src="udit.jpeg" style="width:100%;">
+	<img src="udit.jpg" style="width:100%;">
 	<p style="text-align: center;">Udit Kumar</p>
 	</div>
 
@@ -178,7 +178,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
 
