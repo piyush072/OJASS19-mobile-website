@@ -53,7 +53,7 @@
 
 			<!----<img id="image" alt="event" src="download.png" style="padding:5%;width:100%;height:auto;" class="responsive">-->
 
-			<div class="row" id="row">
+			<div class="row" id="row" style="display:none;">
 		    <div class="col-md-12">
 		      <!-- Nav tabs -->
 		      <div class="card" style="background:black;" id="cd" style="position:fixed;overflow:hidden;">
@@ -82,7 +82,7 @@
 				<button class="cn-button" id="cn-button" style="position:fixed;top:530px;">Events</button>
 				<div class="cn-wrapper" id="cn-wrapper" style="position:fixed;top:530px;">
 					<ul>
-						<li><a href="#" ><span>About</span></a></li>
+						<li><a href="#"><span>About</span></a></li>
 						<li><a href="#"><span>Tutorials</span></a></li>
 						<li><a href="#"><span>Articles</span></a></li>
 						<li><a href="#"><span>Snippets</span></a></li>
@@ -93,7 +93,13 @@
 				</div>
 				<!-- End of Nav Structure -->
 			</div>
-
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('a').click(function(){
+						$('#row').css("display","block");
+					});
+				});
+			</script>
 		</div><!-- /container -->
 		<script src="js/polyfills.js"></script>
 		<script src="js/demo2.js"></script>
