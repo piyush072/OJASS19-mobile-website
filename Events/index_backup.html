@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Ojass Events</title>
+    <link rel="shortcut icon" href="ojass_black_nb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline|Satisfy" rel="stylesheet">
+    <style type="text/css">
+        .timeline {
+    position: relative;
+    padding:0 0 0 0;
+    margin-top:22px;
+    list-style: none;
+}
+body {
+  /*background-image: url("bg_4.jpg");*/
+  background:black:
+  /*background-repeat: no-repeat, repeat;*/
+  
+}
+.timeline>li:nth-child(even) {
+    position: relative;
+    margin-bottom: -180px;
+    height: 150px;
+    right:-160px;
+    top:-140px
+
+}
+
+.timeline>li:nth-child(odd) {
+    position: relative;
+    margin-bottom: 50px;
+    height: 180px;
+    left:-80px;
+    
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+    min-height: 170px;
+}
+
+
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 15%;
+    border: 5px solid white;
+    border-radius: 100%;
+    background-color: #ffffff;
+    
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+    color:#808080;
+}
+/*Style for even div.line*/
+.timeline>li:nth-child(odd) .line:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 250px;
+    width: 4px;
+    height:200px;
+    max-height:800px;
+    background-color: #ffffff;
+    transform: rotate(-70deg);
+    box-shadow: 0 0 5px #f1f1f1;
+}
+/*Style for odd div.line*/
+.timeline>li:nth-child(even) .line:before  {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 10px;
+    width: 4px;
+    height:200px;
+    max-height:800px;
+    background-color: #fdfdff;
+    transform: rotate(70deg);
+    box-shadow: 0 0 5px #ffffff;
+}
+.timeline>li:nth-child(odd) .text{
+  color:white;
+  font-family: 'Satisfy', cursive;
+  font-size:18px;
+  position:relative;
+  left:6px;
+  top:10px;
+}
+.timeline>li:nth-child(even) .text{
+  color:white;
+  font-family: 'Satisfy', cursive;
+  font-size:18px;
+  position:relative;
+  left:6px;
+  top:12px;
+}
+.img-circle{
+  background:black;
+}
+
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: black">
+<div class="container"  style="margin:5%;padding:0;">
+  <div class="row" style="margin:0;">
+    <div class="col-lg-12" style="margin:0;">
+      <h3 class="text-center" style="color:white;margin:0;font-family: 'Kumar One Outline', cursive;">Events</h3>
+     
+      <ul class="timeline">
+        <li><a href="">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="icons/akriti-01.png" alt=""><br>
+            <span class="text" style="position:relative;top:-5px;left:14px">Aakriti</span>
+          </div>
+        </a>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+            
+          <div class="timeline-image">              
+            <img class="img-circle img-responsive" src="icons/neo drishti-01.png" alt="">
+            <span class="text">Neo Drishti</span>
+          </div>
+          
+          <div class="line"></div>
+        </li>
+        <li>
+          
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="icons/armageddon-01.png" alt="">
+            <span class="text">Armadeggon</span>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="icons/arthashastra-01.png" alt="">
+            <span class="text" style="position:relative;left:-6px">Arthashastra-</span>
+          </div>
+          
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="icons/avartan-01-01.png" alt="">
+            <span class="text">Avartan</span>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="icons/Circuit House-01.png" alt="">
+              <span class="text">Circuit House</span>
+            </div>
+            
+            <div class="line"></div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="icons/deus-x-machina-01.png" alt="">
+              <span class="text">Deus-Ex-Machina</span>
+            </div>
+            <div class="line"></div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="icons/live CS-01.png" alt="">
+                <span class="text">Live CS</span>
+              </div>
+              
+              <div class="line"></div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="icons/No Ground Zone-01.png" alt="">
+                <span class="text">No Ground Zone</span>
+              </div>
+              <div class="line"></div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="icons/NSCET-01.png" alt="">
+                  <span class="text">NSCET</span>
+                </div>
+                
+                <div class="line"></div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="icons/paraphernalia-01.png" alt="">
+                  <span class="text">Paraphernalia</span>
+                </div>
+                <div class="line"></div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="icons/prayas-01.png" alt="">
+                    <span class="text">Prayas</span>
+                  </div>
+                  
+                  <div class="line"></div>
+                </li>
+                <li>
+                  <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="icons/rise of machines-01.png" alt="">
+                    <span class="text">Rise of Machines</span>
+                  </div>
+                  <div class="line"></div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                      <img class="img-circle img-responsive" src="icons/silicon valley-01.png" alt="">
+                      <span class="text">Silicon Valley</span>
+                    </div>
+                    
+                    <div class="line"></div>
+                  </li>
+                  <li>
+                    <div class="timeline-image">
+                      <img class="img-circle img-responsive" src="icons/SCHOOL EVENTS-01.png" alt="">
+                      <span class="text">School Events</span>
+                    </div>
+                    <div class="line"></div>
+                  </li>
+                  <li class="timeline-inverted">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="icons/vishwacode genesis-01.png" alt="">
+                        <span class="text">Vishwacode Genesis</span>
+                      </div>
+                    </li>
+                    
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
