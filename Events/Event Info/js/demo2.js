@@ -13,7 +13,7 @@
 	    classie.add(wrapper, 'opened-nav');
 	  }
 	  else{
-	    this.innerHTML = "Menu";
+	    this.innerHTML = "Events";
 		classie.remove(wrapper, 'opened-nav');
 	  }
 	  open = !open;
