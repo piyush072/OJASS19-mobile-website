@@ -103,10 +103,10 @@
 					var i=1;var a = 180/6;var b=-20;
 					for(i=1;i<=6;i++){
 						$('.eve li:nth-child('+i+')').css({
-							'-webkit-transform' : 'rotate('+b+'deg) skew(80deg)',
-							'-moz-transform'    : 'rotate('+b+'deg) skew(80deg)',
-							'-ms-transform'     : 'rotate('+b+'deg) skew(80deg)',
-							'transform'         : 'rotate('+b+'deg) skew(80deg)'
+							'-webkit-transform' : 'rotate('+b+'deg) skew(60deg)',
+							'-moz-transform'    : 'rotate('+b+'deg) skew(60deg)',
+							'-ms-transform'     : 'rotate('+b+'deg) skew(60deg)',
+							'transform'         : 'rotate('+b+'deg) skew(60deg)'
 						});
 						b+=a;
 					}

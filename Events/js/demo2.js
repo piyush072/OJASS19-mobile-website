@@ -13,8 +13,9 @@
 	    classie.add(wrapper, 'opened-nav');
 	  }
 	  else{
-	    this.innerHTML = "Events";
+	    
 		classie.remove(wrapper, 'opened-nav');
+		this.innerHTML = "Events";
 	  }
 	  open = !open;
 	}

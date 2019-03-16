@@ -194,7 +194,7 @@ body {
 	-moz-transition: all .3s ease .3s;
 	transition: all .3s ease .3s;
 }
-
+/*
 .csstransforms .opened-nav li:first-child {
 	-webkit-transform: rotate(-20deg) skew(60deg);
 	-moz-transform: rotate(-20deg) skew(60deg);
@@ -243,7 +243,7 @@ body {
 	-ms-transform: rotate(172deg) skew(60deg);
 	transform: rotate(172deg) skew(60deg);
 }
-
+*/
 @media only screen and (max-width: 620px) {
 	.no-csstransforms li {
 		width: 4em;
