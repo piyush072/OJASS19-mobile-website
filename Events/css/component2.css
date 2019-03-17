@@ -57,7 +57,7 @@ body {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	cursor: pointer;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 .cn-button:focus{
 	outline:0;
@@ -163,7 +163,7 @@ body {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	pointer-events: auto;
-	border: 
+	 
 }
 
 .csstransforms .cn-wrapper li a span {
@@ -243,7 +243,7 @@ body {
 	-ms-transform: rotate(172deg) skew(60deg);
 	transform: rotate(172deg) skew(60deg);
 }
-*/
+
 @media only screen and (max-width: 620px) {
 	.no-csstransforms li {
 		width: 4em;
@@ -282,3 +282,4 @@ body {
 		line-height: 3em;
 	}
 }
+*/
