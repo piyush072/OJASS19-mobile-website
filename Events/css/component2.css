@@ -57,7 +57,7 @@ body {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	cursor: pointer;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 .cn-button:focus{
 	outline:0;
@@ -163,7 +163,7 @@ body {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	pointer-events: auto;
-	border: 
+	 
 }
 
 .csstransforms .cn-wrapper li a span {
@@ -194,7 +194,7 @@ body {
 	-moz-transition: all .3s ease .3s;
 	transition: all .3s ease .3s;
 }
-
+/*
 .csstransforms .opened-nav li:first-child {
 	-webkit-transform: rotate(-20deg) skew(60deg);
 	-moz-transform: rotate(-20deg) skew(60deg);
@@ -282,3 +282,4 @@ body {
 		line-height: 3em;
 	}
 }
+*/
